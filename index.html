@@ -5,12 +5,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Kelly | Dance Portfolio</title>
   <link rel="stylesheet" href="styles.css" />
+  
 </head>
 <body>
   <header class="site-header">
     <div class="logo">KELLY'S HUB</div>
     <nav class="nav-bar">
-      <ul>
+      <div class="menu-toggle" id="menu-toggle">
+      ☰
+    </div>
+      <ul class="nav-links">
         <li><a href="#about">About</a></li>
         <li><a href="#skills">Skills</a></li>
         <li><a href="#services">Services</a></li>
@@ -42,7 +46,7 @@
         <p><strong>Location:</strong> Nairobi, Kenya · <strong>Available for:</strong> Performances, Workshops, Choreography</p>
       </div>
       <div class="profile-card">
-        <img src="assets/WhatsApp Image 2025-08-06 at 23.53.42_1d470d38.jpg" alt="Kelly portrait">
+        <img src="assets/WhatsApp Image 2025-08-19 at 13.17.15_c69cc290.jpg" alt="Kelly portrait">
         <div class="profile-meta">
           <h3>Kelly (Kelvin)</h3>
           <p>Performer • Choreographer • Trainer</p>
@@ -115,7 +119,7 @@
     <div class="gallery-grid">
       <img src="/html/assets/WhatsApp Image 2025-08-18 at 23.22.54_3e5a2da4.jpg" alt="Workshop Snapshot">
       
-      <img src="/html/assets/WhatsApp Image 2025-08-18 at 23.20.25_91e73117.jpg" alt="Performance 2">
+      <img src="/html/assets/WhatsApp Image 2025-08-18 at 23.22.17_63fd3a0a.jpg" alt="Performance 2">
       <img src="/html/assets/WhatsApp Image 2025-08-18 at 23.20.26_52ddd208.jpg" alt="Performance 3">
       <img src="/html/assets/WhatsApp Image 2025-08-18 at 23.20.26_f3db74c1.jpg" alt="Backstage">
       <img src="/html/assets/WhatsApp Image 2025-08-18 at 23.08.12_0768c4f4.jpg" alt="Promo Shoot">
@@ -164,6 +168,17 @@
   <footer>
     <p>&copy; 2025 Kelly. All rights reserved. Designed by JW Studios.</p>
   </footer>
+  <script src="/html/script.js">
+  document.addEventListener("DOMContentLoaded", () => {
+  const toggle = document.getElementById("menu-toggle");
+  const navLinks = document.querySelector(".nav-bar ul");
+
+  toggle.addEventListener("click", () => {
+    navLinks.classList.toggle("active");
+  });
+});
+
+  </script>
 </body>
 </html>
 
