@@ -1,11 +1,17 @@
-document.addEventListener("DOMContentLoaded", () => {
-  const toggle = document.getElementById("menu-toggle");
-  const navLinks = document.querySelector(".nav-bar ul");
+// Select elements
+const toggle = document.querySelector('.menu-toggle');
+const nav = document.querySelector('.nav-links');
 
-  toggle.addEventListener("click", () => {
-    navLinks.classList.toggle("active");
-  });
+// Toggle nav when hamburger is clicked
+toggle.addEventListener('click', () => {
+  nav.classList.toggle('active');
+  menuToggle.classList.toggle('active');
 });
 
-
-
+// Close menu when a nav link is clicked
+document.querySelectorAll('.nav-links a').forEach(link => {
+  link.addEventListener('click', () => {
+    navLinks.classList.remove('active');
+    menuToggle.classList.remove('active');
+  });
+});
