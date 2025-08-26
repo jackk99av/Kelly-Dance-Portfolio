@@ -37,7 +37,7 @@ body {
   color: #f5f5f5;
   text-decoration: none;
   font-weight: 500;
-  transition: color 0.3s ease;
+  transition: color 0.3s ease-in-out;
 }
 
 .nav-links a:hover {
@@ -51,7 +51,7 @@ body {
   border: none;
   cursor: pointer;
   color: white;
-  z-index: 9999;
+  z-index: 1001;
 }
 
 /* 🔹 HERO */

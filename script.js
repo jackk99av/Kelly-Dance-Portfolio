@@ -1,12 +1,9 @@
-// Select elements
 const toggle = document.querySelector('.menu-toggle');
-const nav = document.querySelector('.nav-links');
+  const nav = document.querySelector('.nav-links');
 
-// Toggle nav when hamburger is clicked
-toggle.addEventListener('click', () => {
-  nav.classList.toggle('active');
-  menuToggle.classList.toggle('active');
-});
+  toggle.addEventListener('click', () => {
+    nav.classList.toggle('active');
+  });
 
 // Close menu when a nav link is clicked
 document.querySelectorAll('.nav-links a').forEach(link => {
